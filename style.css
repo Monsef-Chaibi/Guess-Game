@@ -1,0 +1,290 @@
+html,
+body {
+  height: 100%;
+  
+}
+
+body {
+  margin: 0;
+  background-color: #fffc58;
+  overflow: hidden;
+}
+
+nav {
+  position: absolute;
+  top: 3%;
+  right: 0;
+  left: 0;
+  width: 500px;
+  margin: 0 auto;
+  transform: translateY(-50%);
+}
+
+nav a {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  color: #949494;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: 0.2s ease color;
+}
+
+nav a:before,
+nav a:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0.2s ease transform;
+}
+
+nav a:before {
+  top: 0;
+  left: 10px;
+  width: 6px;
+  height: 6px;
+}
+
+nav a:after {
+  top: 5px;
+  left: 18px;
+  width: 4px;
+  height: 4px;
+}
+
+nav a:nth-child(1):before {
+  background-color: yellow;
+}
+
+nav a:nth-child(1):after {
+  background-color: red;
+}
+
+nav a:nth-child(2):before {
+  background-color: #00e2ff;
+}
+
+nav a:nth-child(2):after {
+  background-color: #89ff00;
+}
+
+nav a:nth-child(3):before {
+  background-color: purple;
+}
+
+nav a:nth-child(3):after {
+  background-color: palevioletred;
+}
+
+#indicator {
+  position: absolute;
+  left: 4%;
+  bottom: 0;
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: 0.2s ease left;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+nav a:hover:before,
+nav a:hover:after {
+  transform: scale(1);
+}
+
+nav a:nth-child(1):hover ~ #indicator {
+  background: linear-gradient(130deg, yellow, red);
+}
+
+nav a:nth-child(2):hover ~ #indicator {
+  left: 26.5%;
+  background: linear-gradient(130deg, #00e2ff, #89ff00);
+}
+
+nav a:nth-child(3):hover ~ #indicator {
+  left: 59%;
+  background: linear-gradient(130deg, purple, palevioletred);
+}
+/* .cont {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 50px; 
+    margin-top: 8%;
+  }
+
+  .box {
+    display: flex;
+    justify-content: center;
+  }
+table
+{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-family: 'Courier New', monospace;
+}
+.th
+{
+    background-color: black;
+    color: azure;
+    border-radius: 3Px;
+    height: 100px;
+}
+.affichage
+{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-radius: 3Px;
+   height: 100%;
+}
+img
+{
+    width: 80px;
+    height: 80px;
+    background-color: #ffffff;
+    padding: 0%;
+    border-radius: 10px;
+}
+h4
+{
+    background-color: rgba(255, 255, 255, 0.353);
+    width: 30%;
+    text-align: center;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+}
+.af
+{
+    height: 25%;
+    width: 100%; 
+}
+.num
+{
+    width: 50%;
+    margin-bottom: 4%;
+    border-radius: 5px;
+    height: 30px;
+    border: none;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+}
+
+ */
+
+
+
+.logo
+{
+
+}
+.logodiv
+{
+  margin-top: 4%;
+  display: flex;
+  justify-content: center;
+}
+.content
+{
+  display: flex;
+  justify-content: center;
+}
+.input 
+{
+  border: black 3px solid;
+  width: 350px;
+  height: 30px;
+  border-radius: 8px;
+  margin-right: 2%;
+}
+
+
+/* CSS */
+.button-28 {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  height: 40px;
+  min-height: 30px;
+  min-width: 0;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100px;
+  will-change: transform;
+ 
+}
+
+.button-28:disabled {
+  pointer-events: none;
+}
+
+.button-28:hover {
+  color: #000000;
+  background-color: #4ee2ce;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-28:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+.cont{
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  
+}
+.af
+{
+  text-align: center;
+  
+}
+.th
+{
+    background-color: black;
+    color: azure;
+    border-radius: 3Px;
+    height: 40px;
+    width: 200px;
+}
+.affichage
+{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-radius: 3Px;
+   height: 30px;
+}
+.zoomed {
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  height: 100px;
+  width: 100px;
+  border-radius:100%;
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+.zoomed:hover {
+  transform: scale(1.2); /* Scale the image up by 20% on hover */
+}

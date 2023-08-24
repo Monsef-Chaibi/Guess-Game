@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=OCR+A+Std&display=swap">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=OCR+A+Std&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.css">
+
+</head>
+<body>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT ME</a>
+            <a href="#" onclick="HowToplay()">HOW TO PLAY</a>
+            <div id="indicator"></div>
+        </nav>
+        <div class="logodiv">
+            <img class="zoomed" id="zoomed" src="logo.png" alt="" >
+        </div>
+        <br>
+        <h2 style="text-align: center;">
+                Guess the Number
+        </h2>
+        <div class="content">
+            
+            <input class="input" maxlength="4" type="text" name="" id="Numero" onchange="Value()">
+            <button class="button-28" role="button"  onclick="checkGuess()">Guess</button>
+        </div>
+        <div>
+            <div class="cont">
+              
+                    <table class="af" id="tb" >
+                        <tr>
+                            <td class="th">
+                                Number 
+                            </td>
+                            <td class="th">
+                                Correct Number
+                            </td>
+                            <td class="th">
+                                Correct Psition
+                            </td>
+                        </tr>
+                       
+                </div>
+        </div>
+<!-- HTML !-->
+<!-- <button class="button-49" onclick="HowToplay()" role="button">How To play ?</button> -->
+
+
+<!--
+        <div class="box">
+            
+            <table>
+                <tr>
+                    <td  colspan="3">
+                        <input class="num" disabled id="Numero" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td >
+                        <button onclick="getValue(this)" value="7">
+                            <img src="7.png" alt="7">
+                        </button>
+                    </td>
+                    <td>
+                        <button onclick="getValue(this)" value="8">
+                            <img src="8.png" alt="8">
+                        </button>
+                    </td>
+                    <td>
+                        <button onclick="getValue(this)" value="9">
+                            <img src="9.png"  alt="9">
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td >
+                        <button onclick="getValue(this)" value="4">
+                            <img src="4.png" alt="4">
+                        </button>
+                    </td>
+                    <td>
+                        <button onclick="getValue(this)" value="5">
+                            <img src="5.png" alt="5">
+                        </button>
+                    </td>
+                    <td>
+                        <button onclick="getValue(this)" value="6">
+                            <img src="6.png" alt="6">
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td >
+                        <button onclick="getValue(this)" value="1">
+                            <img src="1.png" alt="1">
+                        </button>
+                    </td>
+                    <td>
+                        <button onclick="getValue(this)" value="2">
+                            <img src="2.png" alt="2">
+                        </button>
+                    </td>
+                    <td>
+                        <button onclick="getValue(this)" value="3">
+                            <img src="3.png" alt="3">
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="deletenum()">
+                            <img src="remove.png" alt="">
+                        </button>
+                    </td>
+                    <td>
+                        <img src="snowflake.png" alt="">
+                    </td>
+                    <td>
+                        <button onclick="checkGuess()">
+                            <img src="check.png" alt="">
+                        </button>
+                    </td>
+                </tr>
+            </table>
+            <div class="container">
+  
+        </div>
+    </div> -->
+
+
+</body>
+</html>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
